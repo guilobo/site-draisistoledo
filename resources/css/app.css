@@ -1,0 +1,220 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    /* Brand dark scale */
+    --color-brand-950: #0F0D0B;
+    --color-brand-900: #1C1917;
+    --color-brand-800: #292524;
+    --color-brand-700: #44403C;
+    --color-brand-600: #57534E;
+    --color-brand-500: #78716C;
+    --color-brand-400: #A8A29E;
+    --color-brand-300: #D6D3D1;
+    --color-brand-200: #E7E5E4;
+    --color-brand-100: #F5F5F4;
+    --color-brand-50: #FAFAF9;
+
+    /* Gold scale */
+    --color-gold-900: #6B4010;
+    --color-gold-800: #7C521A;
+    --color-gold-700: #96682A;
+    --color-gold-600: #A87B3C;
+    --color-gold-500: #B8955A;
+    --color-gold-400: #C9A96E;
+    --color-gold-300: #D4B885;
+    --color-gold-200: #E0CCA4;
+    --color-gold-100: #EDE0C4;
+    --color-gold-50: #F7F2E8;
+
+    /* Warm tones */
+    --color-cream: #F5EFE6;
+    --color-warm-white: #FDFAF7;
+    --color-blush: #E8D5CC;
+    --color-blush-dark: #D4B8AC;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+        font-family: var(--font-serif);
+    }
+}
+
+@layer components {
+    .btn-gold {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--color-gold-500);
+        color: var(--color-brand-900);
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.875rem 2rem;
+        border-radius: 2px;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-gold:hover {
+        background-color: var(--color-gold-600);
+        transform: translateY(-1px);
+    }
+
+    .btn-outline-light {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.875rem 2rem;
+        border-radius: 2px;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn-outline-light:hover {
+        border-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-outline-gold {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid var(--color-gold-500);
+        color: var(--color-gold-500);
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.875rem 2rem;
+        border-radius: 2px;
+        transition: all 0.2s ease;
+    }
+
+    .btn-outline-gold:hover {
+        background-color: var(--color-gold-500);
+        color: var(--color-brand-900);
+    }
+
+    .section-label {
+        font-family: var(--font-sans);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--color-gold-500);
+    }
+
+    .section-label-light {
+        font-family: var(--font-sans);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--color-gold-300);
+    }
+
+    .gold-line {
+        width: 3rem;
+        height: 1px;
+        background-color: var(--color-gold-500);
+    }
+
+    .card-pillar {
+        background: white;
+        padding: 2rem;
+        border-radius: 2px;
+        border-top: 2px solid var(--color-gold-500);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .card-pillar:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+    }
+
+    .nav-scrolled {
+        background-color: rgba(28, 25, 23, 0.97) !important;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .testimonial-card {
+        background: white;
+        border-radius: 2px;
+        padding: 2rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .program-card {
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .program-card:hover {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        transform: translateY(-3px);
+    }
+
+    .tech-card {
+        padding: 2rem;
+        border: 1px solid rgba(184, 149, 90, 0.2);
+        border-radius: 2px;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .tech-card:hover {
+        border-color: rgba(184, 149, 90, 0.5);
+        background-color: rgba(184, 149, 90, 0.04);
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 999;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.08);
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+    }
+}
