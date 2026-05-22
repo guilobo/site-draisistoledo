@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+php artisan migrate --force
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+node /assets/scripts/prestart.mjs /assets/nginx.template.conf /nginx.conf
+php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf
