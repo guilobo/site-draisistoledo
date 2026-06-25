@@ -3,13 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $post->seo_description ?? $post->excerpt ?? 'Participação da Dra. Isis Toledo na mídia — Endocrinologista e Metabologista.' }}">
-    <title>{{ $post->seo_title ?? $post->title }} | Dra. Isis Toledo — Endocrinologista</title>
+
+    <x-seo.head
+        :title="$post->seo_title ?? $post->title"
+        :description="$post->seo_description ?? $post->excerpt ?? 'Participação da Dra. Isis Toledo na mídia — Endocrinologista e Metabologista.'"
+        :image="$post->featured_image_path ? \Illuminate\Support\Facades\Storage::url($post->featured_image_path) : null"
+        type="article"
+    />
+
+    <x-seo.schema type="media" :post="$post" />
+
     <link rel="icon" type="image/png" href="/images/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <x-seo.analytics />
     <style>
         .prose h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: #1C1917; margin-top: 2.5rem; margin-bottom: 1rem; }
         .prose h3 { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 600; color: #1C1917; margin-top: 2rem; margin-bottom: 0.75rem; }

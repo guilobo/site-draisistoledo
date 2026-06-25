@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dra. Isis Toledo — Endocrinologista especialista em gestão metabólica, emagrecimento sustentável e longevidade. Medicina baseada em evidência, estratégia personalizada.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Dra. Isis Toledo | Endocrinologista | Gestão Metabólica">
-    <meta property="og:description" content="Unidade de Gestão Metabólica para resultados sustentáveis em saúde, emagrecimento e longevidade.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://draisistoledo.com">
 
-    <title>Dra. Isis Toledo | Endocrinologista | Gestão Metabólica</title>
+    <x-seo.head
+        title="Endocrinologista | Gestão Metabólica | Florianópolis"
+        description="Dra. Isis Toledo — Endocrinologista especialista em gestão metabólica, emagrecimento sustentável e longevidade. Medicina baseada em evidência, estratégia personalizada."
+    />
+
+    <x-seo.schema type="home" :faq-items="$faqItems ?? null" />
 
     <link rel="icon" type="image/png" href="/images/fav.png">
 
@@ -20,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <x-seo.analytics />
 </head>
 
 <body class="bg-warm-white font-sans text-brand-900 antialiased">
@@ -180,6 +181,41 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
+        </div>
+    </section>
+
+    {{-- ============================================================
+         GEO: ANSWER-FIRST BLOCK + PONTOS-CHAVE
+         (Otimizado para IA — ChatGPT, Perplexity, Gemini)
+    ============================================================ --}}
+    <section id="resumo-seo" class="py-12 bg-warm-white border-b border-brand-100">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="prose prose-brand max-w-none">
+                <p class="text-brand-600 leading-relaxed text-base">
+                    A <strong>Dra. Isis Toledo</strong> é médica <strong>endocrinologista</strong> em Florianópolis (SC), com título de especialista pela SBEM, dedicada ao tratamento de <strong>obesidade</strong>, <strong>desequilíbrios hormonais</strong> e <strong>emagrecimento sustentável</strong>. Sua clínica é uma Unidade de Gestão Metabólica que combina diagnóstico aprofundado (bioimpedância InBody 970, painel hormonal completo), terapias modernas como análogos de GLP-1, e acompanhamento longitudinal para garantir resultados duradouros. A abordagem é baseada em evidência científica e personalizada para cada paciente.
+                </p>
+
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6 mb-0">
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> <strong>Endocrinologista</strong> com título SBEM e mais de 10 anos de experiência clínica
+                    </li>
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> Especialista em <strong>obesidade</strong>, <strong>hormônios</strong> e metabolic health
+                    </li>
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> Bioimpedância de alta precisão (InBody 970) para análise metabólica
+                    </li>
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> Protocolos com GLP-1, estratégia nutricional e equipe integrada
+                    </li>
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> Acompanhamento de 3 ou 12 meses, sem efeito sanfona
+                    </li>
+                    <li class="flex items-start gap-2 text-sm text-brand-600">
+                        <span class="text-gold-500 font-bold">✓</span> Atendimento em Florianópolis/SC, com concierge médico
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -975,6 +1011,76 @@
 
             <p class="text-white/30 text-xs mt-6 tracking-wide" data-reveal data-delay="400ms">
                 Respondemos em até 24 horas em dias úteis.
+            </p>
+        </div>
+    </section>
+
+    {{-- ============================================================
+         GEO: FAQ OTIMIZADO PARA IA
+    ============================================================ --}}
+    <section id="faq" class="py-24 bg-cream">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12" data-reveal>
+                <span class="section-label">Perguntas frequentes</span>
+                <h2 class="mt-4 text-3xl md:text-4xl font-serif text-brand-900">
+                    Dúvidas sobre endocrinologia e tratamento
+                </h2>
+                <p class="mt-4 text-brand-500 max-w-xl mx-auto leading-relaxed">
+                    Respostas claras para as perguntas mais comuns sobre obesidade, hormônios e o acompanhamento com a Dra. Isis Toledo.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                @php
+                $faqItems = [
+                    [
+                        'q' => 'Quando procurar um endocrinologista?',
+                        'a' => 'Recomenda-se procurar um endocrinologista quando há dificuldade de emagrecer mesmo com dieta e exercício, ganho de peso inexplicado, fadiga persistente, alterações hormonais (como menopausa), ou quando se busca um acompanhamento médico estruturado para reverter obesidade e transtornos metabólicos. A Dra. Isis Toledo oferece avaliação individualizada em Florianópolis/SC.',
+                    ],
+                    [
+                        'q' => 'Como é o tratamento para obesidade com a Dra. Isis Toledo?',
+                        'a' => 'O tratamento de obesidade combina diagnóstico aprofundado (bioimpedância InBody 970, painel hormonal), estratégia nutricional integrada, uso criterioso de medicamentos como análogos de GLP-1 quando indicado, e acompanhamento longitudinal de 3 ou 12 meses. O foco é resultado sustentável, sem efeito sanfona, com ajustes personalizados em cada fase.',
+                    ],
+                    [
+                        'q' => 'O que causa desequilíbrio hormonal?',
+                        'a' => 'Desequilíbrios hormonais podem ser causados por menopausa, estresse crônico, disfunções da tireoide, resistência à insulina, ganho de peso, sedentarismo e fatores genéticos. Os sintomas incluem fadiga, alterações de peso, mudanças de humor e distúrbios do sono. O diagnóstico correto exige exames específicos interpretados por um endocrinologista.',
+                    ],
+                    [
+                        'q' => 'O que são análogos de GLP-1 e quando são indicados?',
+                        'a' => 'Análogos de GLP-1 são medicamentos que auxiliam no controle do apetite e da glicemia, indicados para tratamento de obesidade e diabetes tipo 2. São prescritos apenas com avaliação médica, dentro de um protocolo estruturado que inclui dieta, exercício e monitoramento. A Dra. Isis Toledo utiliza GLP-1 de forma criteriosa e personalizada.',
+                    ],
+                    [
+                        'q' => 'Quanto tempo dura o tratamento de emagrecimento?',
+                        'a' => 'A Dra. Isis Toledo oferece dois formatos: o Programa Metabólico Intensivo (3 meses) para reestruturação metabólica focada, e o Programa Longitudinal (12 meses) para transformação completa com acompanhamento estendido. A escolha depende do perfil e objetivos de cada paciente.',
+                    ],
+                    [
+                        'q' => 'É necessário ter sobrepeso para consultar um endocrinologista?',
+                        'a' => 'Não. O endocrinologista trata não apenas obesidade, mas também alterações hormonais (tireoide, menopausa), fadiga crônica, questões de longevidade e performance metabólica. Mesmo sem sobrepeso, a avaliação endocrinológica pode identificar desequilíbrios que afetam qualidade de vida.',
+                    ],
+                    [
+                        'q' => 'Como agendar uma avaliação com a Dra. Isis Toledo?',
+                        'a' => 'O agendamento é feito pelo WhatsApp (+55 48 99934-4088) ou pelo botão "Agendar Avaliação" no site. A primeira consulta inclui avaliação clínica, análise de histórico e definição de um plano personalizado baseado nos objetivos e no perfil metabólico do paciente.',
+                    ],
+                ];
+                @endphp
+
+                @foreach($faqItems as $index => $faq)
+                <details class="faq-item bg-white rounded-sm shadow-sm overflow-hidden group" data-reveal data-delay="{{ ($index % 3) * 100 }}ms">
+                    <summary class="flex items-center justify-between cursor-pointer p-5 font-medium text-brand-900 hover:text-gold-700 transition-colors">
+                        <span class="text-base pr-4">{{ $faq['q'] }}</span>
+                        <svg class="w-5 h-5 text-gold-500 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 pb-5 text-brand-500 text-sm leading-relaxed border-t border-brand-100 pt-4">
+                        {{ $faq['a'] }}
+                    </div>
+                </details>
+                @endforeach
+            </div>
+
+            <p class="text-center text-xs text-brand-400 mt-8 max-w-2xl mx-auto">
+                As informações acima têm caráter educacional e não substituem uma consulta médica. Para avaliação individualizada, agende um atendimento.
             </p>
         </div>
     </section>

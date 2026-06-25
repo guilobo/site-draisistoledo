@@ -49,6 +49,49 @@ class AdminPanelProvider extends PanelProvider
                     . '</div>'
                 ),
             )
+            ->renderHook(
+                PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
+                fn (): HtmlString => new HtmlString(<<<'HTML'
+<script>
+(function () {
+    const syncField = function (field) {
+        if (!field) {
+            return;
+        }
+
+        field.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
+        field.dispatchEvent(new Event('change', { bubbles: true, cancelable: true }));
+    };
+
+    const bindLoginForm = function () {
+        document.querySelectorAll('form.fi-sc-form').forEach(function (form) {
+            if (form.dataset.autofillSyncBound === '1') {
+                return;
+            }
+
+            form.dataset.autofillSyncBound = '1';
+
+            const syncForm = function () {
+                syncField(form.querySelector('input[wire\\:model="data.email"]'));
+                syncField(form.querySelector('input[wire\\:model="data.password"]'));
+                syncField(form.querySelector('input[wire\\:model="data.remember"]'));
+            };
+
+            form.addEventListener('submit', syncForm, true);
+
+            setTimeout(syncForm, 150);
+            setTimeout(syncForm, 600);
+            setTimeout(syncForm, 1500);
+        });
+    };
+
+    document.addEventListener('DOMContentLoaded', bindLoginForm);
+    document.addEventListener('livewire:init', bindLoginForm);
+    document.addEventListener('livewire:navigated', bindLoginForm);
+})();
+</script>
+HTML),
+            )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')

@@ -3,13 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog da Dra. Isis Toledo — Artigos sobre endocrinologia, emagrecimento, menopausa e longevidade com base científica.">
-    <title>Blog — Dra. Isis Toledo | Endocrinologista</title>
+
+    <x-seo.head
+        title="Blog — Endocrinologia, Hormônios e Saúde Metabólica"
+        description="Blog da Dra. Isis Toledo — Artigos sobre endocrinologia, emagrecimento, menopausa, hormônios e longevidade com base científica."
+    />
+
+    <x-seo.schema type="blog-index" />
+
     <link rel="icon" type="image/png" href="/images/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <x-seo.analytics />
 </head>
 
 <body class="bg-warm-white font-sans text-brand-900 antialiased">
