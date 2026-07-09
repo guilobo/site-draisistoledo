@@ -14,6 +14,12 @@ use Illuminate\Support\Str;
 ])]
 class Category extends Model
 {
+    protected $fillable = [
+        'name',
+        'slug',
+        'description',
+    ];
+
     public function posts(): BelongsToMany
     {
         return $this->belongsToMany(Post::class)->withTimestamps();

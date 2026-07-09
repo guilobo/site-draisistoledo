@@ -26,6 +26,20 @@ class Post extends Model
 {
     use SoftDeletes;
 
+    protected $fillable = [
+        'user_id',
+        'title',
+        'slug',
+        'excerpt',
+        'content',
+        'featured_image_path',
+        'tag',
+        'status',
+        'published_at',
+        'seo_title',
+        'seo_description',
+    ];
+
     public const STATUS_DRAFT = 'draft';
 
     public const STATUS_PUBLISHED = 'published';

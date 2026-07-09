@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use App\Models\Post;
 use App\Models\Category;
 use App\Http\Controllers\SitemapController;
@@ -10,6 +12,17 @@ use App\Http\Controllers\SitemapController;
 // ============================================
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])
     ->name('sitemap');
+
+Route::get('/docs/api-3f84c6db2a7e41c091b5d9e8f2a1c7ab4e56f901a2b3c4d5', function () {
+    $markdownPath = resource_path('docs/api-public-integration.md');
+
+    abort_unless(File::exists($markdownPath), 404);
+
+    return view('api-docs', [
+        'title' => 'Documentação da API de Postagens',
+        'html' => Str::markdown(File::get($markdownPath)),
+    ]);
+})->name('api.docs.public');
 
 Route::get('/', function () {
     $posts = Post::where('status', 'published')
