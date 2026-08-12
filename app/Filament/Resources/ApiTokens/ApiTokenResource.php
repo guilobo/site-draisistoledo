@@ -67,9 +67,9 @@ class ApiTokenResource extends Resource
                     ->sortable(),
                 TextColumn::make('abilities')
                     ->label('Permissoes')
-                    ->formatStateUsing(fn (?array $state): string => collect($state ?? [])
-                        ->map(fn (string $ability) => self::ABILITY_OPTIONS[$ability] ?? $ability)
-                        ->implode(', '))
+                    ->badge()
+                    ->separator(',')
+                    ->formatStateUsing(fn (string $state): string => self::ABILITY_OPTIONS[$state] ?? $state)
                     ->wrap(),
                 TextColumn::make('last_used_at')
                     ->label('Ultimo uso')

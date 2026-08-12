@@ -1,14 +1,14 @@
 <?php
 
+use App\Http\Controllers\SitemapController;
+use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use App\Models\Post;
-use App\Models\Category;
-use App\Http\Controllers\SitemapController;
 
 // ============================================
-// SEO: Sitemap dinâmico
+// SEO: Sitemap dinamico
 // ============================================
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])
     ->name('sitemap');
@@ -18,9 +18,12 @@ Route::get('/docs/api-3f84c6db2a7e41c091b5d9e8f2a1c7ab4e56f901a2b3c4d5', functio
 
     abort_unless(File::exists($markdownPath), 404);
 
+    $baseUrl = rtrim((string) config('app.url'), '/');
+    $markdown = str_replace('{{BASE_URL}}', $baseUrl, File::get($markdownPath));
+
     return view('api-docs', [
-        'title' => 'Documentação da API de Postagens',
-        'html' => Str::markdown(File::get($markdownPath)),
+        'title' => 'Documentacao da API de Postagens',
+        'html' => Str::markdown($markdown),
     ]);
 })->name('api.docs.public');
 
@@ -75,7 +78,7 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'midiaHighlights', 'faqItems'));
 });
 
-// Na Mídia
+// Na Midia
 Route::get('/na-midia', function () {
     $midiaCategory = Category::where('slug', 'na-midia')->first();
 
