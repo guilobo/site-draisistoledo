@@ -60,7 +60,7 @@
             <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5">
                 <a href="/" class="text-base text-white/80 hover:text-white font-medium">Início</a>
                 <a href="/na-midia" class="text-base text-white font-medium">Na Mídia</a>
-                <a href="https://wa.me/5548999344088" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
             </div>
         </div>
     </nav>

@@ -61,7 +61,7 @@
                 <a href="/" class="text-base text-white/80 hover:text-white font-medium">Início</a>
                 <a href="/na-midia" class="text-base text-white/80 hover:text-white font-medium">Na Mídia</a>
                 <a href="/blog" class="text-base text-white/80 hover:text-white font-medium">Blog</a>
-                <a href="https://wa.me/5548999344088" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
             </div>
         </div>
     </nav>
@@ -139,7 +139,7 @@
             <p class="text-white/50 mb-8 leading-relaxed">
                 Agende uma avaliação com a Dra. Isis Toledo e receba um diagnóstico individualizado baseado na sua realidade metabólica.
             </p>
-            <a href="https://wa.me/5548999344088?text=Olá,%20li%20um%20artigo%20e%20gostaria%20de%20agendar%20uma%20avaliação"
+            <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                target="_blank" rel="noopener noreferrer"
                class="btn-gold">
                 Agendar pelo WhatsApp

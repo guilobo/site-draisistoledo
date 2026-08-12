@@ -301,7 +301,7 @@
                     <p class="mt-6 text-white/50 leading-relaxed max-w-md">
                         A Clínica Toledo não atende todo tipo de paciente — e isso é um diferencial. Trabalhamos com quem está pronto para uma abordagem séria e comprometida com resultado real.
                     </p>
-                    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20saber%20se%20o%20programa%20é%20indicado%20para%20mim"
+                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                        target="_blank" rel="noopener noreferrer"
                        class="btn-gold mt-8 inline-flex">
                         Verificar se é para mim
@@ -493,7 +493,7 @@
                             </li>
                             @endforeach
                         </ul>
-                        <a href="https://wa.me/5548999344088?text=Olá,%20tenho%20interesse%20no%20Programa%20Metabólico%20Intensivo"
+                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                            target="_blank" rel="noopener noreferrer"
                            class="btn-outline-gold w-full justify-center mt-8">
                             Tenho interesse
@@ -546,7 +546,7 @@
                             </li>
                             @endforeach
                         </ul>
-                        <a href="https://wa.me/5548999344088?text=Olá,%20tenho%20interesse%20no%20Programa%20Longitudinal%2012%20meses"
+                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                            target="_blank" rel="noopener noreferrer"
                            class="btn-gold w-full justify-center mt-8">
                             Tenho interesse
@@ -557,7 +557,7 @@
 
             <p class="text-center text-sm text-brand-400 mt-8" data-reveal>
                 Não sabe qual programa se encaixa melhor no seu caso?
-                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20entender%20qual%20programa%20é%20ideal%20para%20mim"
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                    target="_blank" rel="noopener noreferrer"
                    class="text-gold-600 hover:text-gold-500 underline underline-offset-2 transition-colors">
                     Fale com nossa equipe.
@@ -693,7 +693,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20Dra.%20Isis%20Toledo"
+                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                        target="_blank" rel="noopener noreferrer"
                        class="btn-gold mt-8 inline-flex">
                         Agendar avaliação
@@ -999,7 +999,7 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-reveal data-delay="300ms">
-                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%20com%20a%20Dra.%20Isis%20Toledo"
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-gold text-base px-10 py-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -1123,7 +1123,7 @@
                     <h3 class="text-xs font-semibold tracking-widest uppercase text-brand-500 mb-5">Contato</h3>
                     <ul class="space-y-3">
                         <li>
-                            <a href="https://wa.me/5548999344088"
+                            <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                                target="_blank" rel="noopener noreferrer"
                                class="flex items-center gap-2 text-sm text-brand-400 hover:text-gold-400 transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
