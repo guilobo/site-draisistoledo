@@ -51,7 +51,7 @@
 
                 <!-- CTA + hamburger -->
                 <div class="flex items-center gap-4">
-                    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+                    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
                        target="_blank" rel="noopener noreferrer"
                        class="hidden lg:inline-flex btn-gold">
                         Agendar Avaliação
@@ -78,7 +78,7 @@
                 <a href="#depoimentos" class="text-base text-white/80 hover:text-white font-medium tracking-wide">Resultados</a>
                 <a href="/na-midia" class="text-base text-white/80 hover:text-white font-medium tracking-wide">Na Mídia</a>
                 <a href="/blog" class="text-base text-white/80 hover:text-white font-medium tracking-wide">Blog</a>
-                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-gold self-start mt-2">
                     Agendar Avaliação
@@ -120,7 +120,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4" data-reveal data-delay="300ms">
-                        <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+                        <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
                            target="_blank" rel="noopener noreferrer"
                            class="btn-gold">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -301,7 +301,7 @@
                     <p class="mt-6 text-white/50 leading-relaxed max-w-md">
                         A Clínica Toledo não atende todo tipo de paciente — e isso é um diferencial. Trabalhamos com quem está pronto para uma abordagem séria e comprometida com resultado real.
                     </p>
-                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                        target="_blank" rel="noopener noreferrer"
                        class="btn-gold mt-8 inline-flex">
                         Verificar se é para mim
@@ -493,7 +493,7 @@
                             </li>
                             @endforeach
                         </ul>
-                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                            target="_blank" rel="noopener noreferrer"
                            class="btn-outline-gold w-full justify-center mt-8">
                             Tenho interesse
@@ -546,7 +546,7 @@
                             </li>
                             @endforeach
                         </ul>
-                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                        <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                            target="_blank" rel="noopener noreferrer"
                            class="btn-gold w-full justify-center mt-8">
                             Tenho interesse
@@ -557,7 +557,7 @@
 
             <p class="text-center text-sm text-brand-400 mt-8" data-reveal>
                 Não sabe qual programa se encaixa melhor no seu caso?
-                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                    target="_blank" rel="noopener noreferrer"
                    class="text-gold-600 hover:text-gold-500 underline underline-offset-2 transition-colors">
                     Fale com nossa equipe.
@@ -693,7 +693,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                    <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                        target="_blank" rel="noopener noreferrer"
                        class="btn-gold mt-8 inline-flex">
                         Agendar avaliação
@@ -999,7 +999,7 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-reveal data-delay="300ms">
-                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-gold text-base px-10 py-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -1123,7 +1123,7 @@
                     <h3 class="text-xs font-semibold tracking-widest uppercase text-brand-500 mb-5">Contato</h3>
                     <ul class="space-y-3">
                         <li>
-                            <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                            <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E"
                                target="_blank" rel="noopener noreferrer"
                                class="flex items-center gap-2 text-sm text-brand-400 hover:text-gold-400 transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -1159,7 +1159,7 @@
     </footer>
 
     {{-- WhatsApp floating button --}}
-    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
        target="_blank" rel="noopener noreferrer"
        class="whatsapp-float"
        aria-label="Falar pelo WhatsApp">

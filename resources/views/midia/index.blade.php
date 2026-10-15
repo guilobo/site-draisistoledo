@@ -35,7 +35,7 @@
                     <a href="/na-midia" class="text-sm text-white font-medium tracking-wide">Na Mídia</a>
                     <a href="/blog" class="text-sm text-white/80 hover:text-white font-medium tracking-wide transition-colors">Blog</a>
                 </div>
-                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+                <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
                    target="_blank" rel="noopener noreferrer"
                    class="hidden lg:inline-flex btn-gold">
                     Agendar Avaliação
@@ -55,7 +55,7 @@
                 <a href="/#programas" class="text-base text-white/80 hover:text-white font-medium">Programas</a>
                 <a href="/na-midia" class="text-base text-white font-medium">Na Mídia</a>
                 <a href="/blog" class="text-base text-white/80 hover:text-white font-medium">Blog</a>
-                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
+                <a href="https://wa.me/5548999344088?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2E" target="_blank" rel="noopener noreferrer" class="btn-gold self-start mt-2">Agendar Avaliação</a>
             </div>
         </div>
     </nav>
@@ -223,7 +223,7 @@
         <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <h2 class="text-2xl md:text-3xl font-serif text-white mb-4">Pronta para dar o próximo passo?</h2>
             <p class="text-white/50 mb-8 leading-relaxed">Agende uma avaliação com a Dra. Isis Toledo e receba um diagnóstico individualizado.</p>
-            <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+            <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
                target="_blank" rel="noopener noreferrer"
                class="btn-gold">Agendar pelo WhatsApp</a>
         </div>
@@ -237,7 +237,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação"
+    <a href="https://wa.me/5548999344088?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%2E"
        target="_blank" rel="noopener noreferrer"
        class="whatsapp-float" aria-label="Falar pelo WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
